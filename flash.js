@@ -104,3 +104,6 @@ function ranking() {
         })
         .catch((error) => console.error("取得エラー:", error));
 }
+window.onload = function () {
+    ranking(); // ページ読み込み時にランキング取得
+};
