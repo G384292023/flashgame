@@ -4,6 +4,7 @@ let sum = 0;
 let flashstart = false;
 const count = document.getElementById("count");
 const start = document.getElementById("start");
+const boxtext = document.getElementById("boxtext");
 const box = document.getElementById("box");
 function gamestart() {
     flashstart = true;
@@ -105,5 +106,5 @@ function ranking() {
         .catch((error) => console.error("取得エラー:", error));
 }
 window.onload = function () {
-    ranking(); // ページ読み込み時にランキング取得
+    ranking();
 };
