@@ -98,7 +98,7 @@ function ranking() {
             const table = document.getElementById("rankingtable");
             for (let i = 0; i < 5; i++) {
                 const row = table.rows[i];
-                if (datas[i]) {
+                if (data[i]) {
                     row.cells[1].innerHTML = datas[i][0] + "さん";
                     row.cells[2].innerHTML = "level:" + datas[i][1];
                 } else {
