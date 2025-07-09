@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フラッシュ暗算ゲーム</title>
+    <link rel="stylesheet" href="flash.css">
+</head>
+
+<body>
+    <h1>フラッシュ暗算ゲーム</h1>
+    <div id="count" class="count">---</div>
+    <div id="box" class="box"><p id="boxtext">?</p></div>
+        <button id="start" class="start "onclick="gamestart()">スタート</button>
+        <div id="ranking">
+            <h4>ランキング</h4>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>順位</th>
+                        <th>名前</th>
+                        <th>レベル</th>
+                    </tr>
+                </thead>
+                <tbody  id="rankingtable">
+                    <tr>
+                        <td>1位</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2位</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3位</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4位</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5位</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <script src="flash.js"></script>
+</body>
+
+</html>
