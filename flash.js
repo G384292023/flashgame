@@ -96,7 +96,8 @@ function ranking() {
             datas = data;
             data.sort((a, b) => b[1] - a[1]);
             const table = document.getElementById("rankingtable");
-            for(let i = 0;i<datas.length;i++){
+            const max = table.rows.length;
+            for(let i = 0;i<max;i++){
                 if(i < datas.length){
                     table.rows[i].style.display = "";
                     let name = table.rows[i].cells[1];
