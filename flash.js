@@ -96,17 +96,11 @@ function ranking() {
             datas = data;
             data.sort((a, b) => b[1] - a[1]);
             const table = document.getElementById("rankingtable");
-            const max = table.rows.length;
-            for(let i = 0;i<max;i++){
-                if(i < datas.length){
-                    table.rows[i].style.display = "";
-                    let name = table.rows[i].cells[1];
-                    name.innerHTML = datas[i][0] + "さん";
-                    let level = table.rows[i].cells[2];
-                    level.innerHTML = "level:" + datas[i][1];
-                } else {
-                    table.rows[i].style.display = "none";
-                }
+            for(let i = 0;i<datas.length;i++){
+                let name = table.rows[i].cells[1];
+                name.innerHTML = datas[i][0] + "さん";
+                let level = table.rows[i].cells[2];
+                level.innerHTML =  "level:"+datas[i][1];
             }
         })
         .catch((error) => console.error("取得エラー:", error));
